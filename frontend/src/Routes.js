@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import Login from "./Login";
-import mainPage from "./mainPage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Login from "./containers/Login";
+import MainPage from "./containers/MainPage";
 import { Layout } from "antd";
 import "antd/dist/antd.css";
 
@@ -9,14 +9,17 @@ const { Header, Content } = Layout;
 
 const Routes = () => (
   <BrowserRouter>
-    <main>
+    <Switch>
       <Route path="/login" exact component={Login} />
-      <Header>
-        <Content>
-          <Route path="/" component={mainPage} />
+      <div>
+        <Header />
+        <Content style={{ padding: "50px 20%" }}>
+          <Switch>
+            <Route path="/" component={MainPage} />
+          </Switch>
         </Content>
-      </Header>
-    </main>
+      </div>
+    </Switch>
   </BrowserRouter>
 );
 
