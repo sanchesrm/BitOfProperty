@@ -1,0 +1,29 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.2",
+    "jsonwebtoken": "^8.4.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.0",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "nodemon": "^1.18.9"
+  }
+}
