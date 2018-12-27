@@ -2,46 +2,46 @@ import React, { Component, Fragment } from "react";
 import { withRouter } from "react-router-dom";
 import { Table, Icon, message, Button, Row, Popconfirm, Drawer } from "antd";
 import AddNewUser from "../components/AddNewUser";
-
-const data = [
-  {
-    id: "1",
-    username: "John Brown",
-    password: "New York No. 1 Lake Park"
-  },
-  {
-    id: "2",
-    username: "Jim Green",
-    password: "London No. 1 Lake Park"
-  },
-  {
-    id: "3",
-    username: "Joe Black",
-    password: "Sidney No. 1 Lake Park"
-  }
-];
+import { connect } from "react-redux";
+import { bindActionCreators, compose } from "redux";
+import { fetchUsers, deleteUser } from "../actions/userActions";
+import axios from "axios";
 
 class mainPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    axios.defaults.headers.common[
+      "Authorization"
+    ] = this.props.loggedUser.token;
 
     this.state = {
-      loadingTable: false,
+      loadingTable: true,
       addNewUserPanel: false
     };
+  }
+
+  componentDidMount() {
+    this.props.fetchUsers().finally(() => {
+      this.setState({
+        loadingTable: false
+      });
+    });
   }
 
   getColumns = () => {
     return [
       {
         title: "ID",
-        dataIndex: "id",
-        key: "id"
+        dataIndex: "_id",
+        key: "id",
+        width: "300px"
       },
       {
         title: "Username",
         dataIndex: "username",
-        key: "username"
+        key: "username",
+        width: "350px"
       },
       {
         title: "Password",
@@ -50,14 +50,14 @@ class mainPage extends Component {
       },
       {
         title: "",
-        key: "id",
+        key: "deleteUser",
         render: (text, record) => (
           <Popconfirm
             title="Are you sure？"
             okText="Yes"
             cancelText="No"
             placement="leftBottom"
-            onConfirm={() => this.deleteUser(record.id)}
+            onConfirm={() => this.deleteUser(record._id)}
           >
             <Icon style={{ fontSize: "20px" }} type="delete" />
           </Popconfirm>
@@ -69,18 +69,26 @@ class mainPage extends Component {
 
   deleteUser = userId => {
     message.loading("Deleting user..", 2.5);
-    setTimeout(() => {
-      message.success("User was deleted", 2.5);
-      this.setState({
-        loadingTable: true
-      });
+    this.setState({
+      loadingTable: true
+    });
 
-      setTimeout(() => {
+    this.props
+      .deleteUser(userId)
+      .then(() => {
+        message.destroy();
+        message.success("User was deleted", 2.5);
+        this.props.fetchUsers();
+      })
+      .catch(() => {
+        message.destroy();
+        message.error("Something went wrong!", 2.5);
+      })
+      .finally(() => {
         this.setState({
           loadingTable: false
         });
-      }, 3000);
-    }, 3000);
+      });
   };
 
   openCloseAddNewUserPanel = () => {
@@ -90,6 +98,7 @@ class mainPage extends Component {
   };
 
   render() {
+    const users = this.props.users;
     return (
       <Fragment>
         <Row type="flex" justify="end">
@@ -109,7 +118,7 @@ class mainPage extends Component {
         <Table
           style={{ cursor: "pointer", marginTop: "25px" }}
           columns={this.getColumns()}
-          dataSource={data}
+          dataSource={users ? users.data : []}
           loading={this.state.loadingTable}
         />
         <Drawer
@@ -130,4 +139,18 @@ class mainPage extends Component {
   }
 }
 
-export default withRouter(mainPage);
+function mapStateToProps({ users, loggedUser }) {
+  return { users, loggedUser };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchUsers, deleteUser }, dispatch);
+}
+
+export default compose(
+  withRouter,
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )
+)(mainPage);

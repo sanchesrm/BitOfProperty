@@ -1,15 +1,43 @@
 import React, { Component } from "react";
-import { Form, Icon, Input, Button, Layout } from "antd";
+import { Form, Icon, Input, Button, Layout, message } from "antd";
 import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import { bindActionCreators, compose } from "redux";
+import { signInUser } from "../actions/signinActions";
 import "antd/dist/antd.css";
+import logo from "../imgs/bitofproperty.png";
 
 class LoginForm extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: false
+    };
+  }
+
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log("Received values of form: ", values);
-        this.props.history.push("/");
+        this.setState({
+          loading: true
+        });
+
+        this.props
+          .signInUser(values)
+          .then(() => {
+            this.props.history.push("/");
+          })
+          .catch(() => {
+            message.error(
+              "Something went wrong! Check your username or password!",
+              3
+            );
+            this.setState({
+              loading: false
+            });
+          });
       }
     });
   };
@@ -19,9 +47,11 @@ class LoginForm extends Component {
 
     return (
       <Layout.Content style={{ padding: "10% 40%" }}>
+        <img src={logo} style={{ maxWidth: "300px" }} alt="" />
+
         <Form onSubmit={this.handleSubmit} style={{ maxWidth: "300px" }}>
           <Form.Item>
-            {getFieldDecorator("userName", {
+            {getFieldDecorator("username", {
               rules: [
                 {
                   type: "email",
@@ -48,7 +78,12 @@ class LoginForm extends Component {
             )}
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit" style={{ width: "100%" }}>
+            <Button
+              type="primary"
+              htmlType="submit"
+              style={{ width: "100%" }}
+              loading={this.state.loading}
+            >
               Log in
             </Button>
           </Form.Item>
@@ -60,4 +95,14 @@ class LoginForm extends Component {
 
 const WrappedLoginForm = Form.create()(LoginForm);
 
-export default withRouter(WrappedLoginForm);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ signInUser }, dispatch);
+}
+
+export default compose(
+  withRouter,
+  connect(
+    null,
+    mapDispatchToProps
+  )
+)(WrappedLoginForm);

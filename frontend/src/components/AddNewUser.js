@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from "react";
-import { Form, Button, Col, Row, Input } from "antd";
+import { Form, Button, Col, Row, Input, message } from "antd";
+import { createUser, fetchUsers } from "../actions/userActions";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 
 class AddNewUser extends Component {
   constructor() {
@@ -15,20 +18,27 @@ class AddNewUser extends Component {
     const { form, closeDrawer } = this.props;
     form.validateFields((err, values) => {
       if (!err) {
-        console.log("Received values of form: ", values);
-
         this.setState({
           addingUserLoading: true
         });
 
-        setTimeout(() => {
-          this.setState({
-            addingUserLoading: false
+        this.props
+          .createUser(values.email)
+          .then(() => {
+            form.resetFields();
+            closeDrawer();
+          })
+          .then(() => {
+            this.props.fetchUsers();
+          })
+          .catch(() => {
+            message.error("Something went wrong!", 2.5);
+          })
+          .finally(() => {
+            this.setState({
+              addingUserLoading: false
+            });
           });
-
-          form.resetFields();
-          closeDrawer();
-        }, 3000);
       }
     });
   };
@@ -80,4 +90,15 @@ class AddNewUser extends Component {
 
 const AddNewUserForm = Form.create()(AddNewUser);
 
-export default AddNewUserForm;
+function mapStateToProps({ users }) {
+  return { users };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ createUser, fetchUsers }, dispatch);
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AddNewUserForm);
