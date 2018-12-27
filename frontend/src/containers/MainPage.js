@@ -7,7 +7,7 @@ import { bindActionCreators, compose } from "redux";
 import { fetchUsers, deleteUser } from "../actions/userActions";
 import axios from "axios";
 
-class mainPage extends Component {
+export class MainPage extends Component {
   constructor(props) {
     super(props);
 
@@ -103,6 +103,7 @@ class mainPage extends Component {
       <Fragment>
         <Row type="flex" justify="end">
           <Button
+            id="add-new-user-button"
             type="primary"
             size="large"
             onClick={() => {
@@ -139,13 +140,13 @@ class mainPage extends Component {
   }
 }
 
-function mapStateToProps({ users, loggedUser }) {
+export const mapStateToProps = ({ users, loggedUser }) => {
   return { users, loggedUser };
-}
+};
 
-function mapDispatchToProps(dispatch) {
+export const mapDispatchToProps = dispatch => {
   return bindActionCreators({ fetchUsers, deleteUser }, dispatch);
-}
+};
 
 export default compose(
   withRouter,
@@ -153,4 +154,4 @@ export default compose(
     mapStateToProps,
     mapDispatchToProps
   )
-)(mainPage);
+)(MainPage);

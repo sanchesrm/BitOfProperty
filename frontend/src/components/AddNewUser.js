@@ -4,7 +4,7 @@ import { createUser, fetchUsers } from "../actions/userActions";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-class AddNewUser extends Component {
+export class AddNewUser extends Component {
   constructor() {
     super();
 
@@ -79,7 +79,7 @@ class AddNewUser extends Component {
               htmlType="submit"
               loading={this.state.addingUserLoading}
             >
-              Submit
+              Create User
             </Button>
           </Form.Item>
         </Form>
@@ -88,15 +88,15 @@ class AddNewUser extends Component {
   }
 }
 
-const AddNewUserForm = Form.create()(AddNewUser);
+export const AddNewUserForm = Form.create()(AddNewUser);
 
-function mapStateToProps({ users }) {
+export const mapStateToProps = ({ users }) => {
   return { users };
-}
+};
 
-function mapDispatchToProps(dispatch) {
+export const mapDispatchToProps = dispatch => {
   return bindActionCreators({ createUser, fetchUsers }, dispatch);
-}
+};
 
 export default connect(
   mapStateToProps,

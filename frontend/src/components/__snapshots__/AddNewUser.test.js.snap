@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddNewUser Component render correctly 1`] = `
+<Form(Form(AddNewUser))
+  closeDrawer={[MockFunction]}
+  createUser={[MockFunction]}
+  fetchUsers={[MockFunction]}
+  history={
+    Object {
+      "push": [MockFunction],
+    }
+  }
+>
+  <Form(AddNewUser)
+    closeDrawer={[MockFunction]}
+    createUser={[MockFunction]}
+    fetchUsers={[MockFunction]}
+    form={
+      Object {
+        "getFieldDecorator": [Function],
+        "getFieldError": [Function],
+        "getFieldInstance": [Function],
+        "getFieldProps": [Function],
+        "getFieldValue": [Function],
+        "getFieldsError": [Function],
+        "getFieldsValue": [Function],
+        "isFieldTouched": [Function],
+        "isFieldValidating": [Function],
+        "isFieldsTouched": [Function],
+        "isFieldsValidating": [Function],
+        "isSubmitting": [Function],
+        "resetFields": [Function],
+        "setFields": [Function],
+        "setFieldsInitialValue": [Function],
+        "setFieldsValue": [Function],
+        "submit": [Function],
+        "validateFields": [Function],
+        "validateFieldsAndScroll": [Function],
+      }
+    }
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
+  >
+    <AddNewUser
+      closeDrawer={[MockFunction]}
+      createUser={[MockFunction]}
+      fetchUsers={[MockFunction]}
+      form={
+        Object {
+          "getFieldDecorator": [Function],
+          "getFieldError": [Function],
+          "getFieldInstance": [Function],
+          "getFieldProps": [Function],
+          "getFieldValue": [Function],
+          "getFieldsError": [Function],
+          "getFieldsValue": [Function],
+          "isFieldTouched": [Function],
+          "isFieldValidating": [Function],
+          "isFieldsTouched": [Function],
+          "isFieldsValidating": [Function],
+          "isSubmitting": [Function],
+          "resetFields": [Function],
+          "setFields": [Function],
+          "setFieldsInitialValue": [Function],
+          "setFieldsValue": [Function],
+          "submit": [Function],
+          "validateFields": [Function],
+          "validateFieldsAndScroll": [Function],
+        }
+      }
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+    >
+      <Form
+        hideRequiredMark={true}
+        layout="vertical"
+        onSubmit={[Function]}
+        prefixCls="ant-form"
+      >
+        <form
+          className="ant-form ant-form-vertical ant-form-hide-required-mark"
+          onSubmit={[Function]}
+        >
+          <Row
+            gutter={0}
+          >
+            <div
+              className="ant-row"
+            >
+              <Col>
+                <div
+                  className=""
+                >
+                  <FormItem
+                    colon={true}
+                    hasFeedback={false}
+                    label="Username"
+                    prefixCls="ant-form"
+                  >
+                    <Row
+                      className="ant-form-item"
+                      gutter={0}
+                    >
+                      <div
+                        className="ant-row ant-form-item"
+                      >
+                        <Col
+                          className="ant-form-item-label"
+                          key="label"
+                        >
+                          <div
+                            className="ant-form-item-label"
+                          >
+                            <label
+                              className="ant-form-item-required"
+                              htmlFor="email"
+                              onClick={[Function]}
+                              title="Username"
+                            >
+                              Username
+                            </label>
+                          </div>
+                        </Col>
+                        <Col
+                          className="ant-form-item-control-wrapper"
+                          key="wrapper"
+                        >
+                          <div
+                            className="ant-form-item-control-wrapper"
+                          >
+                            <div
+                              className="ant-form-item-control"
+                            >
+                              <span
+                                className="ant-form-item-children"
+                              >
+                                <Input
+                                  data-__field={
+                                    Object {
+                                      "name": "email",
+                                    }
+                                  }
+                                  data-__meta={
+                                    Object {
+                                      "name": "email",
+                                      "originalProps": Object {
+                                        "disabled": false,
+                                        "placeholder": "Please enter username",
+                                        "prefixCls": "ant-input",
+                                        "type": "text",
+                                      },
+                                      "ref": null,
+                                      "rules": Array [
+                                        Object {
+                                          "message": "Username should be an e-mail!",
+                                          "type": "email",
+                                        },
+                                        Object {
+                                          "message": "Please enter username",
+                                          "required": true,
+                                        },
+                                      ],
+                                      "trigger": "onChange",
+                                      "validate": Array [
+                                        Object {
+                                          "rules": Array [
+                                            Object {
+                                              "message": "Username should be an e-mail!",
+                                              "type": "email",
+                                            },
+                                            Object {
+                                              "message": "Please enter username",
+                                              "required": true,
+                                            },
+                                          ],
+                                          "trigger": Array [
+                                            "onChange",
+                                          ],
+                                        },
+                                      ],
+                                      "valuePropName": "value",
+                                    }
+                                  }
+                                  disabled={false}
+                                  id="email"
+                                  onChange={[Function]}
+                                  placeholder="Please enter username"
+                                  prefixCls="ant-input"
+                                  type="text"
+                                >
+                                  <input
+                                    className="ant-input"
+                                    data-__field={
+                                      Object {
+                                        "name": "email",
+                                      }
+                                    }
+                                    data-__meta={
+                                      Object {
+                                        "name": "email",
+                                        "originalProps": Object {
+                                          "disabled": false,
+                                          "placeholder": "Please enter username",
+                                          "prefixCls": "ant-input",
+                                          "type": "text",
+                                        },
+                                        "ref": null,
+                                        "rules": Array [
+                                          Object {
+                                            "message": "Username should be an e-mail!",
+                                            "type": "email",
+                                          },
+                                          Object {
+                                            "message": "Please enter username",
+                                            "required": true,
+                                          },
+                                        ],
+                                        "trigger": "onChange",
+                                        "validate": Array [
+                                          Object {
+                                            "rules": Array [
+                                              Object {
+                                                "message": "Username should be an e-mail!",
+                                                "type": "email",
+                                              },
+                                              Object {
+                                                "message": "Please enter username",
+                                                "required": true,
+                                              },
+                                            ],
+                                            "trigger": Array [
+                                              "onChange",
+                                            ],
+                                          },
+                                        ],
+                                        "valuePropName": "value",
+                                      }
+                                    }
+                                    disabled={false}
+                                    id="email"
+                                    onChange={[Function]}
+                                    onKeyDown={[Function]}
+                                    placeholder="Please enter username"
+                                    type="text"
+                                    value=""
+                                  />
+                                </Input>
+                              </span>
+                              <Animate
+                                animation={Object {}}
+                                component=""
+                                componentProps={Object {}}
+                                key="help"
+                                onAppear={[Function]}
+                                onEnd={[Function]}
+                                onEnter={[Function]}
+                                onLeave={[Function]}
+                                transitionAppear={true}
+                                transitionEnter={true}
+                                transitionLeave={true}
+                                transitionName="show-help"
+                              />
+                            </div>
+                          </div>
+                        </Col>
+                      </div>
+                    </Row>
+                  </FormItem>
+                </div>
+              </Col>
+            </div>
+          </Row>
+          <FormItem
+            colon={true}
+            hasFeedback={false}
+            prefixCls="ant-form"
+          >
+            <Row
+              className="ant-form-item"
+              gutter={0}
+            >
+              <div
+                className="ant-row ant-form-item"
+              >
+                <Col
+                  className="ant-form-item-control-wrapper"
+                  key="wrapper"
+                >
+                  <div
+                    className="ant-form-item-control-wrapper"
+                  >
+                    <div
+                      className="ant-form-item-control"
+                    >
+                      <span
+                        className="ant-form-item-children"
+                      >
+                        <Button
+                          block={false}
+                          ghost={false}
+                          loading={false}
+                          onClick={[MockFunction]}
+                          prefixCls="ant-btn"
+                          style={
+                            Object {
+                              "marginRight": 8,
+                            }
+                          }
+                        >
+                          <Wave>
+                            <button
+                              className="ant-btn"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "marginRight": 8,
+                                }
+                              }
+                              type="button"
+                            >
+                              <span
+                                key=".0"
+                              >
+                                Cancel
+                              </span>
+                            </button>
+                          </Wave>
+                        </Button>
+                        <Button
+                          block={false}
+                          ghost={false}
+                          htmlType="submit"
+                          loading={false}
+                          prefixCls="ant-btn"
+                          type="primary"
+                        >
+                          <Wave>
+                            <button
+                              className="ant-btn ant-btn-primary"
+                              onClick={[Function]}
+                              type="submit"
+                            >
+                              <span
+                                key=".0"
+                              >
+                                Create User
+                              </span>
+                            </button>
+                          </Wave>
+                        </Button>
+                      </span>
+                      <Animate
+                        animation={Object {}}
+                        component=""
+                        componentProps={Object {}}
+                        key="help"
+                        onAppear={[Function]}
+                        onEnd={[Function]}
+                        onEnter={[Function]}
+                        onLeave={[Function]}
+                        transitionAppear={true}
+                        transitionEnter={true}
+                        transitionLeave={true}
+                        transitionName="show-help"
+                      />
+                    </div>
+                  </div>
+                </Col>
+              </div>
+            </Row>
+          </FormItem>
+        </form>
+      </Form>
+    </AddNewUser>
+  </Form(AddNewUser)>
+</Form(Form(AddNewUser))>
+`;

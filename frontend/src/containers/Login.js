@@ -7,7 +7,7 @@ import { signInUser } from "../actions/signinActions";
 import "antd/dist/antd.css";
 import logo from "../imgs/bitofproperty.png";
 
-class LoginForm extends Component {
+export class LoginForm extends Component {
   constructor(props) {
     super(props);
 
@@ -93,11 +93,11 @@ class LoginForm extends Component {
   }
 }
 
-const WrappedLoginForm = Form.create()(LoginForm);
+export const WrappedLoginForm = Form.create()(LoginForm);
 
-function mapDispatchToProps(dispatch) {
+export const mapDispatchToProps = dispatch => {
   return bindActionCreators({ signInUser }, dispatch);
-}
+};
 
 export default compose(
   withRouter,

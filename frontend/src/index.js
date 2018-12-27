@@ -5,7 +5,6 @@ import { createStore, applyMiddleware } from "redux";
 import ReduxPromise from "redux-promise";
 import reducers from "./reducers";
 import Routes from "./Routes";
-import * as serviceWorker from "./serviceWorker";
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
@@ -15,5 +14,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-
-serviceWorker.unregister();

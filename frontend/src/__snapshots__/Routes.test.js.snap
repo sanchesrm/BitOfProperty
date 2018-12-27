@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes Component render correctly 1`] = `
+<BrowserRouter>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/login"
+    />
+    <Redirect
+      push={false}
+      to="/login"
+    />
+  </Switch>
+</BrowserRouter>
+`;
+
+exports[`Routes Component render correctly when token 1`] = `
+<BrowserRouter>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/login"
+    />
+    <div>
+      <Adapter>
+        <img
+          alt=""
+          src="bitofproperty.png"
+          style={
+            Object {
+              "float": "left",
+              "marginLeft": "150px",
+              "marginTop": "2px",
+              "width": "270px",
+            }
+          }
+        />
+        <Menu
+          className=""
+          focusable={false}
+          mode="horizontal"
+          prefixCls="ant-menu"
+          style={
+            Object {
+              "lineHeight": "64px",
+            }
+          }
+          theme="dark"
+        >
+          <MenuItem
+            key="1"
+            onClick={[Function]}
+            style={
+              Object {
+                "float": "right",
+                "fontSize": "18px",
+                "marginRight": "150px",
+              }
+            }
+          >
+            Logout
+          </MenuItem>
+        </Menu>
+      </Adapter>
+      <Adapter
+        style={
+          Object {
+            "padding": "50px 20%",
+          }
+        }
+      >
+        <Switch>
+          <Route
+            component={[Function]}
+            path="/"
+          />
+        </Switch>
+      </Adapter>
+    </div>
+  </Switch>
+</BrowserRouter>
+`;

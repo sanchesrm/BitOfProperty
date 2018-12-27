@@ -11,7 +11,7 @@ import logo from "./imgs/bitofproperty.png";
 
 const { Header, Content } = Layout;
 
-const Routes = props => {
+export const Routes = props => {
   return (
     <BrowserRouter>
       <Switch>

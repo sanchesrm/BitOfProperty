@@ -1,0 +1,3588 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage Component render correctly 1`] = `
+<Fragment>
+  <Row
+    gutter={0}
+    justify="end"
+    type="flex"
+  >
+    <Button
+      block={false}
+      ghost={false}
+      id="add-new-user-button"
+      loading={false}
+      onClick={[Function]}
+      prefixCls="ant-btn"
+      size="large"
+      type="primary"
+    >
+      <Icon
+        type="plus"
+      />
+      Add New User
+    </Button>
+  </Row>
+  <Table
+    bordered={false}
+    className=""
+    columns={
+      Array [
+        Object {
+          "dataIndex": "_id",
+          "key": "id",
+          "title": "ID",
+          "width": "300px",
+        },
+        Object {
+          "dataIndex": "username",
+          "key": "username",
+          "title": "Username",
+          "width": "350px",
+        },
+        Object {
+          "dataIndex": "password",
+          "key": "password",
+          "title": "Password",
+        },
+        Object {
+          "key": "deleteUser",
+          "render": [Function],
+          "title": "",
+          "width": "50px",
+        },
+      ]
+    }
+    dataSource={Array []}
+    indentSize={20}
+    loading={true}
+    locale={Object {}}
+    prefixCls="ant-table"
+    rowKey="key"
+    showHeader={true}
+    size="default"
+    style={
+      Object {
+        "cursor": "pointer",
+        "marginTop": "25px",
+      }
+    }
+    useFixedHeader={false}
+  />
+  <Drawer
+    closable={true}
+    height={256}
+    level={null}
+    mask={true}
+    maskClosable={true}
+    onClose={[Function]}
+    placement="right"
+    prefixCls="ant-drawer"
+    style={
+      Object {
+        "height": "calc(100% - 150px)",
+        "overflow": "auto",
+        "paddingBottom": "150px",
+      }
+    }
+    title="Create a new user"
+    visible={false}
+    width={500}
+  >
+    <Connect(Form(AddNewUser))
+      closeDrawer={[Function]}
+    />
+  </Drawer>
+</Fragment>
+`;
+
+exports[`MainPage Component render correctly with elements on array 1`] = `
+<MainPage
+  deleteUser={[MockFunction]}
+  fetchUsers={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": Promise {},
+        },
+      ],
+    }
+  }
+  loggedUser={
+    Object {
+      "token": "1234",
+    }
+  }
+  users={
+    Array [
+      Object {
+        "_id": "1234",
+        "password": "asdf",
+        "username": "bitofproperty@username.com",
+      },
+    ]
+  }
+>
+  <Row
+    gutter={0}
+    justify="end"
+    type="flex"
+  >
+    <div
+      className="ant-row-flex ant-row-flex-end"
+    >
+      <Button
+        block={false}
+        ghost={false}
+        id="add-new-user-button"
+        loading={false}
+        onClick={[Function]}
+        prefixCls="ant-btn"
+        size="large"
+        type="primary"
+      >
+        <Wave>
+          <button
+            className="ant-btn ant-btn-primary ant-btn-lg"
+            id="add-new-user-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <Icon
+              key=".0"
+              type="plus"
+            >
+              <i
+                className="anticon anticon-plus"
+              >
+                <IconReact
+                  className=""
+                  type="plus-o"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="plus"
+                    fill="currentColor"
+                    height="1em"
+                    key="svg-plus"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M848 474H550V152h-76v322H176c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h298v322h76V550h298c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                      key="svg-plus-svg-0"
+                    />
+                  </svg>
+                </IconReact>
+              </i>
+            </Icon>
+            <span
+              key=".1"
+            >
+              Add New User
+            </span>
+          </button>
+        </Wave>
+      </Button>
+    </div>
+  </Row>
+  <Table
+    bordered={false}
+    className=""
+    columns={
+      Array [
+        Object {
+          "dataIndex": "_id",
+          "key": "id",
+          "title": "ID",
+          "width": "300px",
+        },
+        Object {
+          "dataIndex": "username",
+          "key": "username",
+          "title": "Username",
+          "width": "350px",
+        },
+        Object {
+          "dataIndex": "password",
+          "key": "password",
+          "title": "Password",
+        },
+        Object {
+          "key": "deleteUser",
+          "render": [Function],
+          "title": "",
+          "width": "50px",
+        },
+      ]
+    }
+    dataSource={Array []}
+    indentSize={20}
+    loading={true}
+    locale={Object {}}
+    prefixCls="ant-table"
+    rowKey="key"
+    showHeader={true}
+    size="default"
+    style={
+      Object {
+        "cursor": "pointer",
+        "marginTop": "25px",
+      }
+    }
+    useFixedHeader={false}
+  >
+    <div
+      className="ant-table-wrapper"
+      style={
+        Object {
+          "cursor": "pointer",
+          "marginTop": "25px",
+        }
+      }
+    >
+      <Spin
+        className="ant-table-without-pagination ant-table-spin-holder"
+        prefixCls="ant-spin"
+        size="default"
+        spinning={true}
+        wrapperClassName=""
+      >
+        <Animate
+          animation={Object {}}
+          className="ant-spin-nested-loading"
+          component="div"
+          componentProps={Object {}}
+          onAppear={[Function]}
+          onEnd={[Function]}
+          onEnter={[Function]}
+          onLeave={[Function]}
+          style={null}
+          transitionAppear={false}
+          transitionEnter={true}
+          transitionLeave={true}
+          transitionName="fade"
+        >
+          <div
+            className="ant-spin-nested-loading"
+            style={null}
+          >
+            <AnimateChild
+              animation={Object {}}
+              key="loading"
+              transitionAppear={false}
+              transitionEnter={true}
+              transitionLeave={true}
+              transitionName="fade"
+            >
+              <div
+                key="loading"
+              >
+                <div
+                  className="ant-spin ant-spin-spinning ant-table-without-pagination ant-table-spin-holder"
+                >
+                  <span
+                    className="ant-spin-dot ant-spin-dot-spin"
+                  >
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                  </span>
+                </div>
+              </div>
+            </AnimateChild>
+            <AnimateChild
+              animation={Object {}}
+              key="container"
+              transitionAppear={false}
+              transitionEnter={true}
+              transitionLeave={true}
+              transitionName="fade"
+            >
+              <div
+                className="ant-spin-container ant-spin-blur"
+                key="container"
+              >
+                <LocaleReceiver
+                  componentName="Table"
+                  defaultLocale={
+                    Object {
+                      "emptyText": "No data",
+                      "filterConfirm": "OK",
+                      "filterReset": "Reset",
+                      "filterTitle": "Filter menu",
+                      "selectAll": "Select current page",
+                      "selectInvert": "Invert current page",
+                      "sortTitle": "Sort",
+                    }
+                  }
+                >
+                  <Table
+                    bodyStyle={Object {}}
+                    bordered={false}
+                    className="ant-table-default ant-table-empty"
+                    columns={
+                      Array [
+                        Object {
+                          "className": "",
+                          "dataIndex": "_id",
+                          "key": "id",
+                          "title": Array [
+                            <div
+                              onClick={[Function]}
+                            >
+                              ID
+                            </div>,
+                            undefined,
+                          ],
+                          "width": "300px",
+                        },
+                        Object {
+                          "className": "",
+                          "dataIndex": "username",
+                          "key": "username",
+                          "title": Array [
+                            <div
+                              onClick={[Function]}
+                            >
+                              Username
+                            </div>,
+                            undefined,
+                          ],
+                          "width": "350px",
+                        },
+                        Object {
+                          "className": "",
+                          "dataIndex": "password",
+                          "key": "password",
+                          "title": Array [
+                            <div
+                              onClick={[Function]}
+                            >
+                              Password
+                            </div>,
+                            undefined,
+                          ],
+                        },
+                        Object {
+                          "className": "",
+                          "key": "deleteUser",
+                          "render": [Function],
+                          "title": Array [
+                            <div
+                              onClick={[Function]}
+                            >
+                              
+                            </div>,
+                            undefined,
+                          ],
+                          "width": "50px",
+                        },
+                      ]
+                    }
+                    components={
+                      Object {
+                        "body": Object {
+                          "row": [Function],
+                        },
+                      }
+                    }
+                    data={Array []}
+                    dataSource={Array []}
+                    emptyText={false}
+                    expandIconColumnIndex={0}
+                    indentSize={20}
+                    key="table"
+                    loading={true}
+                    locale={Object {}}
+                    onHeaderRow={[Function]}
+                    onRow={[Function]}
+                    prefixCls="ant-table"
+                    rowClassName={[Function]}
+                    rowKey="key"
+                    rowRef={[Function]}
+                    scroll={Object {}}
+                    showHeader={true}
+                    size="default"
+                    style={Object {}}
+                    useFixedHeader={false}
+                  >
+                    <Provider
+                      store={
+                        Object {
+                          "getState": [Function],
+                          "setState": [Function],
+                          "subscribe": [Function],
+                        }
+                      }
+                    >
+                      <Connect(ExpandableTable)
+                        bodyStyle={Object {}}
+                        bordered={false}
+                        className="ant-table-default ant-table-empty"
+                        columnManager={
+                          ColumnManager {
+                            "_cached": Object {
+                              "groupedColumns": Array [
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "_id",
+                                  "key": "id",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      ID
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "300px",
+                                },
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "username",
+                                  "key": "username",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      Username
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "350px",
+                                },
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "password",
+                                  "key": "password",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      Password
+                                    </div>,
+                                    undefined,
+                                  ],
+                                },
+                                Object {
+                                  "className": "",
+                                  "key": "deleteUser",
+                                  "render": [Function],
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "50px",
+                                },
+                              ],
+                              "isAnyColumnsFixed": false,
+                              "isAnyColumnsLeftFixed": false,
+                              "isAnyColumnsRightFixed": false,
+                              "leafColumns": Array [
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "_id",
+                                  "key": "id",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      ID
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "300px",
+                                },
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "username",
+                                  "key": "username",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      Username
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "350px",
+                                },
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "password",
+                                  "key": "password",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      Password
+                                    </div>,
+                                    undefined,
+                                  ],
+                                },
+                                Object {
+                                  "className": "",
+                                  "key": "deleteUser",
+                                  "render": [Function],
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "50px",
+                                },
+                              ],
+                            },
+                            "columns": Array [
+                              Object {
+                                "className": "",
+                                "dataIndex": "_id",
+                                "key": "id",
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    ID
+                                  </div>,
+                                  undefined,
+                                ],
+                                "width": "300px",
+                              },
+                              Object {
+                                "className": "",
+                                "dataIndex": "username",
+                                "key": "username",
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    Username
+                                  </div>,
+                                  undefined,
+                                ],
+                                "width": "350px",
+                              },
+                              Object {
+                                "className": "",
+                                "dataIndex": "password",
+                                "key": "password",
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    Password
+                                  </div>,
+                                  undefined,
+                                ],
+                              },
+                              Object {
+                                "className": "",
+                                "key": "deleteUser",
+                                "render": [Function],
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    
+                                  </div>,
+                                  undefined,
+                                ],
+                                "width": "50px",
+                              },
+                            ],
+                          }
+                        }
+                        columns={
+                          Array [
+                            Object {
+                              "className": "",
+                              "dataIndex": "_id",
+                              "key": "id",
+                              "title": Array [
+                                <div
+                                  onClick={[Function]}
+                                >
+                                  ID
+                                </div>,
+                                undefined,
+                              ],
+                              "width": "300px",
+                            },
+                            Object {
+                              "className": "",
+                              "dataIndex": "username",
+                              "key": "username",
+                              "title": Array [
+                                <div
+                                  onClick={[Function]}
+                                >
+                                  Username
+                                </div>,
+                                undefined,
+                              ],
+                              "width": "350px",
+                            },
+                            Object {
+                              "className": "",
+                              "dataIndex": "password",
+                              "key": "password",
+                              "title": Array [
+                                <div
+                                  onClick={[Function]}
+                                >
+                                  Password
+                                </div>,
+                                undefined,
+                              ],
+                            },
+                            Object {
+                              "className": "",
+                              "key": "deleteUser",
+                              "render": [Function],
+                              "title": Array [
+                                <div
+                                  onClick={[Function]}
+                                >
+                                  
+                                </div>,
+                                undefined,
+                              ],
+                              "width": "50px",
+                            },
+                          ]
+                        }
+                        components={
+                          Object {
+                            "body": Object {
+                              "row": [Function],
+                            },
+                          }
+                        }
+                        data={Array []}
+                        dataSource={Array []}
+                        emptyText={false}
+                        expandIconColumnIndex={0}
+                        getRowKey={[Function]}
+                        indentSize={20}
+                        loading={true}
+                        locale={Object {}}
+                        onHeaderRow={[Function]}
+                        onRow={[Function]}
+                        prefixCls="ant-table"
+                        rowClassName={[Function]}
+                        rowKey="key"
+                        rowRef={[Function]}
+                        scroll={Object {}}
+                        showHeader={true}
+                        size="default"
+                        style={Object {}}
+                        useFixedHeader={false}
+                      >
+                        <ExpandableTable
+                          bodyStyle={Object {}}
+                          bordered={false}
+                          childrenColumnName="children"
+                          className="ant-table-default ant-table-empty"
+                          columnManager={
+                            ColumnManager {
+                              "_cached": Object {
+                                "groupedColumns": Array [
+                                  Object {
+                                    "className": "",
+                                    "dataIndex": "_id",
+                                    "key": "id",
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        ID
+                                      </div>,
+                                      undefined,
+                                    ],
+                                    "width": "300px",
+                                  },
+                                  Object {
+                                    "className": "",
+                                    "dataIndex": "username",
+                                    "key": "username",
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        Username
+                                      </div>,
+                                      undefined,
+                                    ],
+                                    "width": "350px",
+                                  },
+                                  Object {
+                                    "className": "",
+                                    "dataIndex": "password",
+                                    "key": "password",
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        Password
+                                      </div>,
+                                      undefined,
+                                    ],
+                                  },
+                                  Object {
+                                    "className": "",
+                                    "key": "deleteUser",
+                                    "render": [Function],
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        
+                                      </div>,
+                                      undefined,
+                                    ],
+                                    "width": "50px",
+                                  },
+                                ],
+                                "isAnyColumnsFixed": false,
+                                "isAnyColumnsLeftFixed": false,
+                                "isAnyColumnsRightFixed": false,
+                                "leafColumns": Array [
+                                  Object {
+                                    "className": "",
+                                    "dataIndex": "_id",
+                                    "key": "id",
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        ID
+                                      </div>,
+                                      undefined,
+                                    ],
+                                    "width": "300px",
+                                  },
+                                  Object {
+                                    "className": "",
+                                    "dataIndex": "username",
+                                    "key": "username",
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        Username
+                                      </div>,
+                                      undefined,
+                                    ],
+                                    "width": "350px",
+                                  },
+                                  Object {
+                                    "className": "",
+                                    "dataIndex": "password",
+                                    "key": "password",
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        Password
+                                      </div>,
+                                      undefined,
+                                    ],
+                                  },
+                                  Object {
+                                    "className": "",
+                                    "key": "deleteUser",
+                                    "render": [Function],
+                                    "title": Array [
+                                      <div
+                                        onClick={[Function]}
+                                      >
+                                        
+                                      </div>,
+                                      undefined,
+                                    ],
+                                    "width": "50px",
+                                  },
+                                ],
+                              },
+                              "columns": Array [
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "_id",
+                                  "key": "id",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      ID
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "300px",
+                                },
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "username",
+                                  "key": "username",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      Username
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "350px",
+                                },
+                                Object {
+                                  "className": "",
+                                  "dataIndex": "password",
+                                  "key": "password",
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      Password
+                                    </div>,
+                                    undefined,
+                                  ],
+                                },
+                                Object {
+                                  "className": "",
+                                  "key": "deleteUser",
+                                  "render": [Function],
+                                  "title": Array [
+                                    <div
+                                      onClick={[Function]}
+                                    >
+                                      
+                                    </div>,
+                                    undefined,
+                                  ],
+                                  "width": "50px",
+                                },
+                              ],
+                            }
+                          }
+                          columns={
+                            Array [
+                              Object {
+                                "className": "",
+                                "dataIndex": "_id",
+                                "key": "id",
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    ID
+                                  </div>,
+                                  undefined,
+                                ],
+                                "width": "300px",
+                              },
+                              Object {
+                                "className": "",
+                                "dataIndex": "username",
+                                "key": "username",
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    Username
+                                  </div>,
+                                  undefined,
+                                ],
+                                "width": "350px",
+                              },
+                              Object {
+                                "className": "",
+                                "dataIndex": "password",
+                                "key": "password",
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    Password
+                                  </div>,
+                                  undefined,
+                                ],
+                              },
+                              Object {
+                                "className": "",
+                                "key": "deleteUser",
+                                "render": [Function],
+                                "title": Array [
+                                  <div
+                                    onClick={[Function]}
+                                  >
+                                    
+                                  </div>,
+                                  undefined,
+                                ],
+                                "width": "50px",
+                              },
+                            ]
+                          }
+                          components={
+                            Object {
+                              "body": Object {
+                                "row": [Function],
+                              },
+                            }
+                          }
+                          data={Array []}
+                          dataSource={Array []}
+                          defaultExpandAllRows={false}
+                          defaultExpandedRowKeys={Array []}
+                          emptyText={false}
+                          expandIconAsCell={false}
+                          expandIconColumnIndex={0}
+                          expandedRowClassName={[Function]}
+                          getRowKey={[Function]}
+                          indentSize={20}
+                          loading={true}
+                          locale={Object {}}
+                          onExpand={[Function]}
+                          onExpandedRowsChange={[Function]}
+                          onHeaderRow={[Function]}
+                          onRow={[Function]}
+                          prefixCls="ant-table"
+                          rowClassName={[Function]}
+                          rowKey="key"
+                          rowRef={[Function]}
+                          scroll={Object {}}
+                          showHeader={true}
+                          size="default"
+                          store={
+                            Object {
+                              "getState": [Function],
+                              "setState": [Function],
+                              "subscribe": [Function],
+                            }
+                          }
+                          style={Object {}}
+                          useFixedHeader={false}
+                        >
+                          <div
+                            className="ant-table ant-table-default ant-table-empty ant-table-scroll-position-left"
+                            style={Object {}}
+                          >
+                            <div
+                              className="ant-table-content"
+                            >
+                              <HeadTable
+                                columns={
+                                  Array [
+                                    Object {
+                                      "className": "",
+                                      "dataIndex": "_id",
+                                      "key": "id",
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          ID
+                                        </div>,
+                                        undefined,
+                                      ],
+                                      "width": "300px",
+                                    },
+                                    Object {
+                                      "className": "",
+                                      "dataIndex": "username",
+                                      "key": "username",
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          Username
+                                        </div>,
+                                        undefined,
+                                      ],
+                                      "width": "350px",
+                                    },
+                                    Object {
+                                      "className": "",
+                                      "dataIndex": "password",
+                                      "key": "password",
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          Password
+                                        </div>,
+                                        undefined,
+                                      ],
+                                    },
+                                    Object {
+                                      "className": "",
+                                      "key": "deleteUser",
+                                      "render": [Function],
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          
+                                        </div>,
+                                        undefined,
+                                      ],
+                                      "width": "50px",
+                                    },
+                                  ]
+                                }
+                                expander={
+                                  Object {
+                                    "handleExpandChange": [Function],
+                                    "needIndentSpaced": false,
+                                    "props": Object {
+                                      "bodyStyle": Object {},
+                                      "bordered": false,
+                                      "children": [Function],
+                                      "childrenColumnName": "children",
+                                      "className": "ant-table-default ant-table-empty",
+                                      "columnManager": ColumnManager {
+                                        "_cached": Object {
+                                          "groupedColumns": Array [
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "_id",
+                                              "key": "id",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  ID
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "300px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "username",
+                                              "key": "username",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Username
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "350px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "password",
+                                              "key": "password",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Password
+                                                </div>,
+                                                undefined,
+                                              ],
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "key": "deleteUser",
+                                              "render": [Function],
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "50px",
+                                            },
+                                          ],
+                                          "isAnyColumnsFixed": false,
+                                          "isAnyColumnsLeftFixed": false,
+                                          "isAnyColumnsRightFixed": false,
+                                          "leafColumns": Array [
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "_id",
+                                              "key": "id",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  ID
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "300px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "username",
+                                              "key": "username",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Username
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "350px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "password",
+                                              "key": "password",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Password
+                                                </div>,
+                                                undefined,
+                                              ],
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "key": "deleteUser",
+                                              "render": [Function],
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "50px",
+                                            },
+                                          ],
+                                        },
+                                        "columns": Array [
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "_id",
+                                            "key": "id",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                ID
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "300px",
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "username",
+                                            "key": "username",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                Username
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "350px",
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "password",
+                                            "key": "password",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                Password
+                                              </div>,
+                                              undefined,
+                                            ],
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "key": "deleteUser",
+                                            "render": [Function],
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "50px",
+                                          },
+                                        ],
+                                      },
+                                      "columns": Array [
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "_id",
+                                          "key": "id",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              ID
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "300px",
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "username",
+                                          "key": "username",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              Username
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "350px",
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "password",
+                                          "key": "password",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              Password
+                                            </div>,
+                                            undefined,
+                                          ],
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "key": "deleteUser",
+                                          "render": [Function],
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "50px",
+                                        },
+                                      ],
+                                      "components": Object {
+                                        "body": Object {
+                                          "row": [Function],
+                                        },
+                                      },
+                                      "data": Array [],
+                                      "dataSource": Array [],
+                                      "defaultExpandAllRows": false,
+                                      "defaultExpandedRowKeys": Array [],
+                                      "emptyText": false,
+                                      "expandIconAsCell": false,
+                                      "expandIconColumnIndex": 0,
+                                      "expandedRowClassName": [Function],
+                                      "getRowKey": [Function],
+                                      "indentSize": 20,
+                                      "loading": true,
+                                      "locale": Object {},
+                                      "onExpand": [Function],
+                                      "onExpandedRowsChange": [Function],
+                                      "onHeaderRow": [Function],
+                                      "onRow": [Function],
+                                      "prefixCls": "ant-table",
+                                      "rowClassName": [Function],
+                                      "rowKey": "key",
+                                      "rowRef": [Function],
+                                      "scroll": Object {},
+                                      "showHeader": true,
+                                      "size": "default",
+                                      "store": Object {
+                                        "getState": [Function],
+                                        "setState": [Function],
+                                        "subscribe": [Function],
+                                      },
+                                      "style": Object {},
+                                      "useFixedHeader": false,
+                                    },
+                                    "renderExpandIndentCell": [Function],
+                                    "renderRows": [Function],
+                                  }
+                                }
+                                handleBodyScrollLeft={[Function]}
+                                key="head"
+                                tableClassName=""
+                              />
+                              <BodyTable
+                                columns={
+                                  Array [
+                                    Object {
+                                      "className": "",
+                                      "dataIndex": "_id",
+                                      "key": "id",
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          ID
+                                        </div>,
+                                        undefined,
+                                      ],
+                                      "width": "300px",
+                                    },
+                                    Object {
+                                      "className": "",
+                                      "dataIndex": "username",
+                                      "key": "username",
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          Username
+                                        </div>,
+                                        undefined,
+                                      ],
+                                      "width": "350px",
+                                    },
+                                    Object {
+                                      "className": "",
+                                      "dataIndex": "password",
+                                      "key": "password",
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          Password
+                                        </div>,
+                                        undefined,
+                                      ],
+                                    },
+                                    Object {
+                                      "className": "",
+                                      "key": "deleteUser",
+                                      "render": [Function],
+                                      "title": Array [
+                                        <div
+                                          onClick={[Function]}
+                                        >
+                                          
+                                        </div>,
+                                        undefined,
+                                      ],
+                                      "width": "50px",
+                                    },
+                                  ]
+                                }
+                                expander={
+                                  Object {
+                                    "handleExpandChange": [Function],
+                                    "needIndentSpaced": false,
+                                    "props": Object {
+                                      "bodyStyle": Object {},
+                                      "bordered": false,
+                                      "children": [Function],
+                                      "childrenColumnName": "children",
+                                      "className": "ant-table-default ant-table-empty",
+                                      "columnManager": ColumnManager {
+                                        "_cached": Object {
+                                          "groupedColumns": Array [
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "_id",
+                                              "key": "id",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  ID
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "300px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "username",
+                                              "key": "username",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Username
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "350px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "password",
+                                              "key": "password",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Password
+                                                </div>,
+                                                undefined,
+                                              ],
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "key": "deleteUser",
+                                              "render": [Function],
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "50px",
+                                            },
+                                          ],
+                                          "isAnyColumnsFixed": false,
+                                          "isAnyColumnsLeftFixed": false,
+                                          "isAnyColumnsRightFixed": false,
+                                          "leafColumns": Array [
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "_id",
+                                              "key": "id",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  ID
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "300px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "username",
+                                              "key": "username",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Username
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "350px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "password",
+                                              "key": "password",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Password
+                                                </div>,
+                                                undefined,
+                                              ],
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "key": "deleteUser",
+                                              "render": [Function],
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "50px",
+                                            },
+                                          ],
+                                        },
+                                        "columns": Array [
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "_id",
+                                            "key": "id",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                ID
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "300px",
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "username",
+                                            "key": "username",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                Username
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "350px",
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "password",
+                                            "key": "password",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                Password
+                                              </div>,
+                                              undefined,
+                                            ],
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "key": "deleteUser",
+                                            "render": [Function],
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "50px",
+                                          },
+                                        ],
+                                      },
+                                      "columns": Array [
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "_id",
+                                          "key": "id",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              ID
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "300px",
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "username",
+                                          "key": "username",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              Username
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "350px",
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "password",
+                                          "key": "password",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              Password
+                                            </div>,
+                                            undefined,
+                                          ],
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "key": "deleteUser",
+                                          "render": [Function],
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "50px",
+                                        },
+                                      ],
+                                      "components": Object {
+                                        "body": Object {
+                                          "row": [Function],
+                                        },
+                                      },
+                                      "data": Array [],
+                                      "dataSource": Array [],
+                                      "defaultExpandAllRows": false,
+                                      "defaultExpandedRowKeys": Array [],
+                                      "emptyText": false,
+                                      "expandIconAsCell": false,
+                                      "expandIconColumnIndex": 0,
+                                      "expandedRowClassName": [Function],
+                                      "getRowKey": [Function],
+                                      "indentSize": 20,
+                                      "loading": true,
+                                      "locale": Object {},
+                                      "onExpand": [Function],
+                                      "onExpandedRowsChange": [Function],
+                                      "onHeaderRow": [Function],
+                                      "onRow": [Function],
+                                      "prefixCls": "ant-table",
+                                      "rowClassName": [Function],
+                                      "rowKey": "key",
+                                      "rowRef": [Function],
+                                      "scroll": Object {},
+                                      "showHeader": true,
+                                      "size": "default",
+                                      "store": Object {
+                                        "getState": [Function],
+                                        "setState": [Function],
+                                        "subscribe": [Function],
+                                      },
+                                      "style": Object {},
+                                      "useFixedHeader": false,
+                                    },
+                                    "renderExpandIndentCell": [Function],
+                                    "renderRows": [Function],
+                                  }
+                                }
+                                getRowKey={[Function]}
+                                handleBodyScroll={[Function]}
+                                handleWheel={[Function]}
+                                isAnyColumnsFixed={false}
+                                key="body"
+                                tableClassName=""
+                              >
+                                <div
+                                  className="ant-table-body"
+                                  key="bodyTable"
+                                  onScroll={[Function]}
+                                  onWheel={[Function]}
+                                  style={Object {}}
+                                >
+                                  <Connect(BaseTable)
+                                    columns={
+                                      Array [
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "_id",
+                                          "key": "id",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              ID
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "300px",
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "username",
+                                          "key": "username",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              Username
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "350px",
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "dataIndex": "password",
+                                          "key": "password",
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              Password
+                                            </div>,
+                                            undefined,
+                                          ],
+                                        },
+                                        Object {
+                                          "className": "",
+                                          "key": "deleteUser",
+                                          "render": [Function],
+                                          "title": Array [
+                                            <div
+                                              onClick={[Function]}
+                                            >
+                                              
+                                            </div>,
+                                            undefined,
+                                          ],
+                                          "width": "50px",
+                                        },
+                                      ]
+                                    }
+                                    expander={
+                                      Object {
+                                        "handleExpandChange": [Function],
+                                        "needIndentSpaced": false,
+                                        "props": Object {
+                                          "bodyStyle": Object {},
+                                          "bordered": false,
+                                          "children": [Function],
+                                          "childrenColumnName": "children",
+                                          "className": "ant-table-default ant-table-empty",
+                                          "columnManager": ColumnManager {
+                                            "_cached": Object {
+                                              "groupedColumns": Array [
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "_id",
+                                                  "key": "id",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      ID
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "300px",
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "username",
+                                                  "key": "username",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      Username
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "350px",
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "password",
+                                                  "key": "password",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      Password
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "key": "deleteUser",
+                                                  "render": [Function],
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "50px",
+                                                },
+                                              ],
+                                              "isAnyColumnsFixed": false,
+                                              "isAnyColumnsLeftFixed": false,
+                                              "isAnyColumnsRightFixed": false,
+                                              "leafColumns": Array [
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "_id",
+                                                  "key": "id",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      ID
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "300px",
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "username",
+                                                  "key": "username",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      Username
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "350px",
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "password",
+                                                  "key": "password",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      Password
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "key": "deleteUser",
+                                                  "render": [Function],
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "50px",
+                                                },
+                                              ],
+                                            },
+                                            "columns": Array [
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "_id",
+                                                "key": "id",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    ID
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "300px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "username",
+                                                "key": "username",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Username
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "350px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "password",
+                                                "key": "password",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Password
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "key": "deleteUser",
+                                                "render": [Function],
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "50px",
+                                              },
+                                            ],
+                                          },
+                                          "columns": Array [
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "_id",
+                                              "key": "id",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  ID
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "300px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "username",
+                                              "key": "username",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Username
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "350px",
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "dataIndex": "password",
+                                              "key": "password",
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  Password
+                                                </div>,
+                                                undefined,
+                                              ],
+                                            },
+                                            Object {
+                                              "className": "",
+                                              "key": "deleteUser",
+                                              "render": [Function],
+                                              "title": Array [
+                                                <div
+                                                  onClick={[Function]}
+                                                >
+                                                  
+                                                </div>,
+                                                undefined,
+                                              ],
+                                              "width": "50px",
+                                            },
+                                          ],
+                                          "components": Object {
+                                            "body": Object {
+                                              "row": [Function],
+                                            },
+                                          },
+                                          "data": Array [],
+                                          "dataSource": Array [],
+                                          "defaultExpandAllRows": false,
+                                          "defaultExpandedRowKeys": Array [],
+                                          "emptyText": false,
+                                          "expandIconAsCell": false,
+                                          "expandIconColumnIndex": 0,
+                                          "expandedRowClassName": [Function],
+                                          "getRowKey": [Function],
+                                          "indentSize": 20,
+                                          "loading": true,
+                                          "locale": Object {},
+                                          "onExpand": [Function],
+                                          "onExpandedRowsChange": [Function],
+                                          "onHeaderRow": [Function],
+                                          "onRow": [Function],
+                                          "prefixCls": "ant-table",
+                                          "rowClassName": [Function],
+                                          "rowKey": "key",
+                                          "rowRef": [Function],
+                                          "scroll": Object {},
+                                          "showHeader": true,
+                                          "size": "default",
+                                          "store": Object {
+                                            "getState": [Function],
+                                            "setState": [Function],
+                                            "subscribe": [Function],
+                                          },
+                                          "style": Object {},
+                                          "useFixedHeader": false,
+                                        },
+                                        "renderExpandIndentCell": [Function],
+                                        "renderRows": [Function],
+                                      }
+                                    }
+                                    getRowKey={[Function]}
+                                    hasBody={true}
+                                    hasHead={true}
+                                    isAnyColumnsFixed={false}
+                                    tableClassName=""
+                                  >
+                                    <BaseTable
+                                      columns={
+                                        Array [
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "_id",
+                                            "key": "id",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                ID
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "300px",
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "username",
+                                            "key": "username",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                Username
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "350px",
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "dataIndex": "password",
+                                            "key": "password",
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                Password
+                                              </div>,
+                                              undefined,
+                                            ],
+                                          },
+                                          Object {
+                                            "className": "",
+                                            "key": "deleteUser",
+                                            "render": [Function],
+                                            "title": Array [
+                                              <div
+                                                onClick={[Function]}
+                                              >
+                                                
+                                              </div>,
+                                              undefined,
+                                            ],
+                                            "width": "50px",
+                                          },
+                                        ]
+                                      }
+                                      expander={
+                                        Object {
+                                          "handleExpandChange": [Function],
+                                          "needIndentSpaced": false,
+                                          "props": Object {
+                                            "bodyStyle": Object {},
+                                            "bordered": false,
+                                            "children": [Function],
+                                            "childrenColumnName": "children",
+                                            "className": "ant-table-default ant-table-empty",
+                                            "columnManager": ColumnManager {
+                                              "_cached": Object {
+                                                "groupedColumns": Array [
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "_id",
+                                                    "key": "id",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        ID
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "300px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "username",
+                                                    "key": "username",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Username
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "350px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "password",
+                                                    "key": "password",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Password
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "key": "deleteUser",
+                                                    "render": [Function],
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "50px",
+                                                  },
+                                                ],
+                                                "isAnyColumnsFixed": false,
+                                                "isAnyColumnsLeftFixed": false,
+                                                "isAnyColumnsRightFixed": false,
+                                                "leafColumns": Array [
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "_id",
+                                                    "key": "id",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        ID
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "300px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "username",
+                                                    "key": "username",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Username
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "350px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "password",
+                                                    "key": "password",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Password
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "key": "deleteUser",
+                                                    "render": [Function],
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "50px",
+                                                  },
+                                                ],
+                                              },
+                                              "columns": Array [
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "_id",
+                                                  "key": "id",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      ID
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "300px",
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "username",
+                                                  "key": "username",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      Username
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "350px",
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "dataIndex": "password",
+                                                  "key": "password",
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      Password
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                },
+                                                Object {
+                                                  "className": "",
+                                                  "key": "deleteUser",
+                                                  "render": [Function],
+                                                  "title": Array [
+                                                    <div
+                                                      onClick={[Function]}
+                                                    >
+                                                      
+                                                    </div>,
+                                                    undefined,
+                                                  ],
+                                                  "width": "50px",
+                                                },
+                                              ],
+                                            },
+                                            "columns": Array [
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "_id",
+                                                "key": "id",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    ID
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "300px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "username",
+                                                "key": "username",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Username
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "350px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "password",
+                                                "key": "password",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Password
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "key": "deleteUser",
+                                                "render": [Function],
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "50px",
+                                              },
+                                            ],
+                                            "components": Object {
+                                              "body": Object {
+                                                "row": [Function],
+                                              },
+                                            },
+                                            "data": Array [],
+                                            "dataSource": Array [],
+                                            "defaultExpandAllRows": false,
+                                            "defaultExpandedRowKeys": Array [],
+                                            "emptyText": false,
+                                            "expandIconAsCell": false,
+                                            "expandIconColumnIndex": 0,
+                                            "expandedRowClassName": [Function],
+                                            "getRowKey": [Function],
+                                            "indentSize": 20,
+                                            "loading": true,
+                                            "locale": Object {},
+                                            "onExpand": [Function],
+                                            "onExpandedRowsChange": [Function],
+                                            "onHeaderRow": [Function],
+                                            "onRow": [Function],
+                                            "prefixCls": "ant-table",
+                                            "rowClassName": [Function],
+                                            "rowKey": "key",
+                                            "rowRef": [Function],
+                                            "scroll": Object {},
+                                            "showHeader": true,
+                                            "size": "default",
+                                            "store": Object {
+                                              "getState": [Function],
+                                              "setState": [Function],
+                                              "subscribe": [Function],
+                                            },
+                                            "style": Object {},
+                                            "useFixedHeader": false,
+                                          },
+                                          "renderExpandIndentCell": [Function],
+                                          "renderRows": [Function],
+                                        }
+                                      }
+                                      getRowKey={[Function]}
+                                      hasBody={true}
+                                      hasHead={true}
+                                      isAnyColumnsFixed={false}
+                                      store={
+                                        Object {
+                                          "getState": [Function],
+                                          "setState": [Function],
+                                          "subscribe": [Function],
+                                        }
+                                      }
+                                      tableClassName=""
+                                    >
+                                      <table
+                                        className=""
+                                        key="table"
+                                        style={Object {}}
+                                      >
+                                        <ColGroup
+                                          columns={
+                                            Array [
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "_id",
+                                                "key": "id",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    ID
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "300px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "username",
+                                                "key": "username",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Username
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "350px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "password",
+                                                "key": "password",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Password
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "key": "deleteUser",
+                                                "render": [Function],
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "50px",
+                                              },
+                                            ]
+                                          }
+                                        >
+                                          <colgroup>
+                                            <col
+                                              key="id"
+                                              style={
+                                                Object {
+                                                  "minWidth": "300px",
+                                                  "width": "300px",
+                                                }
+                                              }
+                                            />
+                                            <col
+                                              key="username"
+                                              style={
+                                                Object {
+                                                  "minWidth": "350px",
+                                                  "width": "350px",
+                                                }
+                                              }
+                                            />
+                                            <col
+                                              key="password"
+                                              style={
+                                                Object {
+                                                  "minWidth": undefined,
+                                                  "width": undefined,
+                                                }
+                                              }
+                                            />
+                                            <col
+                                              key="deleteUser"
+                                              style={
+                                                Object {
+                                                  "minWidth": "50px",
+                                                  "width": "50px",
+                                                }
+                                              }
+                                            />
+                                          </colgroup>
+                                        </ColGroup>
+                                        <TableHeader
+                                          columns={
+                                            Array [
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "_id",
+                                                "key": "id",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    ID
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "300px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "username",
+                                                "key": "username",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Username
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "350px",
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "dataIndex": "password",
+                                                "key": "password",
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    Password
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                              },
+                                              Object {
+                                                "className": "",
+                                                "key": "deleteUser",
+                                                "render": [Function],
+                                                "title": Array [
+                                                  <div
+                                                    onClick={[Function]}
+                                                  >
+                                                    
+                                                  </div>,
+                                                  undefined,
+                                                ],
+                                                "width": "50px",
+                                              },
+                                            ]
+                                          }
+                                          expander={
+                                            Object {
+                                              "handleExpandChange": [Function],
+                                              "needIndentSpaced": false,
+                                              "props": Object {
+                                                "bodyStyle": Object {},
+                                                "bordered": false,
+                                                "children": [Function],
+                                                "childrenColumnName": "children",
+                                                "className": "ant-table-default ant-table-empty",
+                                                "columnManager": ColumnManager {
+                                                  "_cached": Object {
+                                                    "groupedColumns": Array [
+                                                      Object {
+                                                        "className": "",
+                                                        "dataIndex": "_id",
+                                                        "key": "id",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            ID
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "300px",
+                                                      },
+                                                      Object {
+                                                        "className": "",
+                                                        "dataIndex": "username",
+                                                        "key": "username",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Username
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "350px",
+                                                      },
+                                                      Object {
+                                                        "className": "",
+                                                        "dataIndex": "password",
+                                                        "key": "password",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Password
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                      },
+                                                      Object {
+                                                        "className": "",
+                                                        "key": "deleteUser",
+                                                        "render": [Function],
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "50px",
+                                                      },
+                                                    ],
+                                                    "isAnyColumnsFixed": false,
+                                                    "isAnyColumnsLeftFixed": false,
+                                                    "isAnyColumnsRightFixed": false,
+                                                    "leafColumns": Array [
+                                                      Object {
+                                                        "className": "",
+                                                        "dataIndex": "_id",
+                                                        "key": "id",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            ID
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "300px",
+                                                      },
+                                                      Object {
+                                                        "className": "",
+                                                        "dataIndex": "username",
+                                                        "key": "username",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Username
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "350px",
+                                                      },
+                                                      Object {
+                                                        "className": "",
+                                                        "dataIndex": "password",
+                                                        "key": "password",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Password
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                      },
+                                                      Object {
+                                                        "className": "",
+                                                        "key": "deleteUser",
+                                                        "render": [Function],
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "50px",
+                                                      },
+                                                    ],
+                                                  },
+                                                  "columns": Array [
+                                                    Object {
+                                                      "className": "",
+                                                      "dataIndex": "_id",
+                                                      "key": "id",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          ID
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "300px",
+                                                    },
+                                                    Object {
+                                                      "className": "",
+                                                      "dataIndex": "username",
+                                                      "key": "username",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Username
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "350px",
+                                                    },
+                                                    Object {
+                                                      "className": "",
+                                                      "dataIndex": "password",
+                                                      "key": "password",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Password
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                    },
+                                                    Object {
+                                                      "className": "",
+                                                      "key": "deleteUser",
+                                                      "render": [Function],
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "50px",
+                                                    },
+                                                  ],
+                                                },
+                                                "columns": Array [
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "_id",
+                                                    "key": "id",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        ID
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "300px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "username",
+                                                    "key": "username",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Username
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "350px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "password",
+                                                    "key": "password",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Password
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "key": "deleteUser",
+                                                    "render": [Function],
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "50px",
+                                                  },
+                                                ],
+                                                "components": Object {
+                                                  "body": Object {
+                                                    "row": [Function],
+                                                  },
+                                                },
+                                                "data": Array [],
+                                                "dataSource": Array [],
+                                                "defaultExpandAllRows": false,
+                                                "defaultExpandedRowKeys": Array [],
+                                                "emptyText": false,
+                                                "expandIconAsCell": false,
+                                                "expandIconColumnIndex": 0,
+                                                "expandedRowClassName": [Function],
+                                                "getRowKey": [Function],
+                                                "indentSize": 20,
+                                                "loading": true,
+                                                "locale": Object {},
+                                                "onExpand": [Function],
+                                                "onExpandedRowsChange": [Function],
+                                                "onHeaderRow": [Function],
+                                                "onRow": [Function],
+                                                "prefixCls": "ant-table",
+                                                "rowClassName": [Function],
+                                                "rowKey": "key",
+                                                "rowRef": [Function],
+                                                "scroll": Object {},
+                                                "showHeader": true,
+                                                "size": "default",
+                                                "store": Object {
+                                                  "getState": [Function],
+                                                  "setState": [Function],
+                                                  "subscribe": [Function],
+                                                },
+                                                "style": Object {},
+                                                "useFixedHeader": false,
+                                              },
+                                              "renderExpandIndentCell": [Function],
+                                              "renderRows": [Function],
+                                            }
+                                          }
+                                        >
+                                          <thead
+                                            className="ant-table-thead"
+                                          >
+                                            <Connect(TableHeaderRow)
+                                              columns={
+                                                Array [
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "_id",
+                                                    "key": "id",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        ID
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "300px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "username",
+                                                    "key": "username",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Username
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "350px",
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "dataIndex": "password",
+                                                    "key": "password",
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Password
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                  },
+                                                  Object {
+                                                    "className": "",
+                                                    "key": "deleteUser",
+                                                    "render": [Function],
+                                                    "title": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "width": "50px",
+                                                  },
+                                                ]
+                                              }
+                                              components={
+                                                Object {
+                                                  "body": Object {
+                                                    "cell": "td",
+                                                    "row": [Function],
+                                                    "wrapper": "tbody",
+                                                  },
+                                                  "header": Object {
+                                                    "cell": "th",
+                                                    "row": "tr",
+                                                    "wrapper": "thead",
+                                                  },
+                                                  "table": "table",
+                                                }
+                                              }
+                                              index={0}
+                                              key="0"
+                                              onHeaderRow={[Function]}
+                                              prefixCls="ant-table"
+                                              row={
+                                                Array [
+                                                  Object {
+                                                    "children": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        ID
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "className": "",
+                                                    "column": Object {
+                                                      "className": "",
+                                                      "dataIndex": "_id",
+                                                      "key": "id",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          ID
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "300px",
+                                                    },
+                                                    "key": "id",
+                                                  },
+                                                  Object {
+                                                    "children": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Username
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "className": "",
+                                                    "column": Object {
+                                                      "className": "",
+                                                      "dataIndex": "username",
+                                                      "key": "username",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Username
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "350px",
+                                                    },
+                                                    "key": "username",
+                                                  },
+                                                  Object {
+                                                    "children": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        Password
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "className": "",
+                                                    "column": Object {
+                                                      "className": "",
+                                                      "dataIndex": "password",
+                                                      "key": "password",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Password
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                    },
+                                                    "key": "password",
+                                                  },
+                                                  Object {
+                                                    "children": Array [
+                                                      <div
+                                                        onClick={[Function]}
+                                                      >
+                                                        
+                                                      </div>,
+                                                      undefined,
+                                                    ],
+                                                    "className": "",
+                                                    "column": Object {
+                                                      "className": "",
+                                                      "key": "deleteUser",
+                                                      "render": [Function],
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "50px",
+                                                    },
+                                                    "key": "deleteUser",
+                                                  },
+                                                ]
+                                              }
+                                              rows={
+                                                Array [
+                                                  Array [
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          ID
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "dataIndex": "_id",
+                                                        "key": "id",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            ID
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "300px",
+                                                      },
+                                                      "key": "id",
+                                                    },
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Username
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "dataIndex": "username",
+                                                        "key": "username",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Username
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "350px",
+                                                      },
+                                                      "key": "username",
+                                                    },
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Password
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "dataIndex": "password",
+                                                        "key": "password",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Password
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                      },
+                                                      "key": "password",
+                                                    },
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "key": "deleteUser",
+                                                        "render": [Function],
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "50px",
+                                                      },
+                                                      "key": "deleteUser",
+                                                    },
+                                                  ],
+                                                ]
+                                              }
+                                            >
+                                              <TableHeaderRow
+                                                columns={
+                                                  Array [
+                                                    Object {
+                                                      "className": "",
+                                                      "dataIndex": "_id",
+                                                      "key": "id",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          ID
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "300px",
+                                                    },
+                                                    Object {
+                                                      "className": "",
+                                                      "dataIndex": "username",
+                                                      "key": "username",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Username
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "350px",
+                                                    },
+                                                    Object {
+                                                      "className": "",
+                                                      "dataIndex": "password",
+                                                      "key": "password",
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Password
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                    },
+                                                    Object {
+                                                      "className": "",
+                                                      "key": "deleteUser",
+                                                      "render": [Function],
+                                                      "title": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "width": "50px",
+                                                    },
+                                                  ]
+                                                }
+                                                components={
+                                                  Object {
+                                                    "body": Object {
+                                                      "cell": "td",
+                                                      "row": [Function],
+                                                      "wrapper": "tbody",
+                                                    },
+                                                    "header": Object {
+                                                      "cell": "th",
+                                                      "row": "tr",
+                                                      "wrapper": "thead",
+                                                    },
+                                                    "table": "table",
+                                                  }
+                                                }
+                                                height={null}
+                                                index={0}
+                                                onHeaderRow={[Function]}
+                                                prefixCls="ant-table"
+                                                row={
+                                                  Array [
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          ID
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "dataIndex": "_id",
+                                                        "key": "id",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            ID
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "300px",
+                                                      },
+                                                      "key": "id",
+                                                    },
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Username
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "dataIndex": "username",
+                                                        "key": "username",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Username
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "350px",
+                                                      },
+                                                      "key": "username",
+                                                    },
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          Password
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "dataIndex": "password",
+                                                        "key": "password",
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Password
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                      },
+                                                      "key": "password",
+                                                    },
+                                                    Object {
+                                                      "children": Array [
+                                                        <div
+                                                          onClick={[Function]}
+                                                        >
+                                                          
+                                                        </div>,
+                                                        undefined,
+                                                      ],
+                                                      "className": "",
+                                                      "column": Object {
+                                                        "className": "",
+                                                        "key": "deleteUser",
+                                                        "render": [Function],
+                                                        "title": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "width": "50px",
+                                                      },
+                                                      "key": "deleteUser",
+                                                    },
+                                                  ]
+                                                }
+                                                rows={
+                                                  Array [
+                                                    Array [
+                                                      Object {
+                                                        "children": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            ID
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "className": "",
+                                                        "column": Object {
+                                                          "className": "",
+                                                          "dataIndex": "_id",
+                                                          "key": "id",
+                                                          "title": Array [
+                                                            <div
+                                                              onClick={[Function]}
+                                                            >
+                                                              ID
+                                                            </div>,
+                                                            undefined,
+                                                          ],
+                                                          "width": "300px",
+                                                        },
+                                                        "key": "id",
+                                                      },
+                                                      Object {
+                                                        "children": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Username
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "className": "",
+                                                        "column": Object {
+                                                          "className": "",
+                                                          "dataIndex": "username",
+                                                          "key": "username",
+                                                          "title": Array [
+                                                            <div
+                                                              onClick={[Function]}
+                                                            >
+                                                              Username
+                                                            </div>,
+                                                            undefined,
+                                                          ],
+                                                          "width": "350px",
+                                                        },
+                                                        "key": "username",
+                                                      },
+                                                      Object {
+                                                        "children": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            Password
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "className": "",
+                                                        "column": Object {
+                                                          "className": "",
+                                                          "dataIndex": "password",
+                                                          "key": "password",
+                                                          "title": Array [
+                                                            <div
+                                                              onClick={[Function]}
+                                                            >
+                                                              Password
+                                                            </div>,
+                                                            undefined,
+                                                          ],
+                                                        },
+                                                        "key": "password",
+                                                      },
+                                                      Object {
+                                                        "children": Array [
+                                                          <div
+                                                            onClick={[Function]}
+                                                          >
+                                                            
+                                                          </div>,
+                                                          undefined,
+                                                        ],
+                                                        "className": "",
+                                                        "column": Object {
+                                                          "className": "",
+                                                          "key": "deleteUser",
+                                                          "render": [Function],
+                                                          "title": Array [
+                                                            <div
+                                                              onClick={[Function]}
+                                                            >
+                                                              
+                                                            </div>,
+                                                            undefined,
+                                                          ],
+                                                          "width": "50px",
+                                                        },
+                                                        "key": "deleteUser",
+                                                      },
+                                                    ],
+                                                  ]
+                                                }
+                                                store={
+                                                  Object {
+                                                    "getState": [Function],
+                                                    "setState": [Function],
+                                                    "subscribe": [Function],
+                                                  }
+                                                }
+                                              >
+                                                <tr
+                                                  style={
+                                                    Object {
+                                                      "height": null,
+                                                    }
+                                                  }
+                                                >
+                                                  <th
+                                                    className=""
+                                                    key="id"
+                                                  >
+                                                    <div
+                                                      key="title"
+                                                      onClick={[Function]}
+                                                    >
+                                                      ID
+                                                    </div>
+                                                  </th>
+                                                  <th
+                                                    className=""
+                                                    key="username"
+                                                  >
+                                                    <div
+                                                      key="title"
+                                                      onClick={[Function]}
+                                                    >
+                                                      Username
+                                                    </div>
+                                                  </th>
+                                                  <th
+                                                    className=""
+                                                    key="password"
+                                                  >
+                                                    <div
+                                                      key="title"
+                                                      onClick={[Function]}
+                                                    >
+                                                      Password
+                                                    </div>
+                                                  </th>
+                                                  <th
+                                                    className=""
+                                                    key="deleteUser"
+                                                  >
+                                                    <div
+                                                      key="title"
+                                                      onClick={[Function]}
+                                                    />
+                                                  </th>
+                                                </tr>
+                                              </TableHeaderRow>
+                                            </Connect(TableHeaderRow)>
+                                          </thead>
+                                        </TableHeader>
+                                        <tbody
+                                          className="ant-table-tbody"
+                                        />
+                                      </table>
+                                    </BaseTable>
+                                  </Connect(BaseTable)>
+                                </div>
+                              </BodyTable>
+                              <div
+                                className="ant-table-placeholder"
+                                key="emptyText"
+                              />
+                            </div>
+                          </div>
+                        </ExpandableTable>
+                      </Connect(ExpandableTable)>
+                    </Provider>
+                  </Table>
+                </LocaleReceiver>
+              </div>
+            </AnimateChild>
+          </div>
+        </Animate>
+      </Spin>
+    </div>
+  </Table>
+  <Drawer
+    closable={true}
+    height={256}
+    level={null}
+    mask={true}
+    maskClosable={true}
+    onClose={[Function]}
+    placement="right"
+    prefixCls="ant-drawer"
+    style={
+      Object {
+        "height": "calc(100% - 150px)",
+        "overflow": "auto",
+        "paddingBottom": "150px",
+      }
+    }
+    title="Create a new user"
+    visible={false}
+    width={500}
+  >
+    <Drawer
+      className=""
+      closable={true}
+      duration=".3s"
+      ease="cubic-bezier(0.78, 0.14, 0.15, 0.86)"
+      firstEnter={false}
+      getContainer="body"
+      handler={false}
+      level={null}
+      mask={true}
+      maskClosable={true}
+      maskStyle={Object {}}
+      onChange={[Function]}
+      onClose={[Function]}
+      onHandleClick={[Function]}
+      onMaskClick={[Function]}
+      open={false}
+      placement="right"
+      prefixCls="ant-drawer"
+      showMask={true}
+      style={
+        Object {
+          "zIndex": undefined,
+        }
+      }
+      title="Create a new user"
+      visible={false}
+      width={500}
+      wrapperClassName=""
+    />
+  </Drawer>
+</MainPage>
+`;
